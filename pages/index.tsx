@@ -41,6 +41,12 @@ const NotesContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   flex-flow: column nowrap;
+
+  @media(min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 1rem;
+  }
 `;
 
 const MainContent = styled.div`
@@ -60,6 +66,21 @@ export default function Home() {
         <MainContent>
           <SearchBar />
           <NotesContainer>
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
+            <Note />
             <Note />
             <Note />
           </NotesContainer>
