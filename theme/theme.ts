@@ -5,3 +5,8 @@ export const lightGray = "#525252";
 
 export const darkYellow = "#c98b20";
 export const yellow = "#e89d1c";
+
+export const breakpoints = {
+  sm: "768px",
+  md: "992px",
+}
