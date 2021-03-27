@@ -27,7 +27,7 @@ const Content = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media(min-width: 992px) {
+  @media(min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
     align-items: start;
 
@@ -42,7 +42,7 @@ const NotesContainer = styled.div`
   box-sizing: border-box;
   flex-flow: column nowrap;
 
-  @media(min-width: 768px) {
+  @media(min-width: ${props => props.theme.breakpoints.sm}) {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 1rem;
@@ -52,7 +52,6 @@ const NotesContainer = styled.div`
 const MainContent = styled.div`
   flex: 1;
   padding: 0.2rem;
-  border-left: 1px solid #eeeeee;
 `;
 
 
